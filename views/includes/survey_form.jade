@@ -1,0 +1,54 @@
+block survey_form
+
+.survey_entry(role="radiogroup")
+  | 1. 당신이 좋아하는 과일은 무엇입니까?
+  br
+  span.radio_entry
+    input.radio_button(type="radio",name="check_entry_1",value="apple",role="radio")
+    | 사과
+    input.radio_button(type="radio",name="check_entry_1",value="strawberry",role="radio")
+    | 딸기
+    input.radio_button(type="radio",name="check_entry_1",value="pear",role="radio")
+    | 배
+    input.radio_button(type="radio",name="check_entry_1",value="watermelon" role="radio")
+    | 수박
+    input.radio_button(type="radio",name="check_entry_1",value="melon",role="radio")
+    | 메론
+    
+.survey_entry(role="radiogroup")
+  | 2. 당신이 좋아하는 스포츠는 무엇입니까?
+  br
+  span.radio_entry
+    input.radio_button(type="radio",name="check_entry_2",value="baseball",role="radio")
+    | 야구
+    input.radio_button(type="radio",name="check_entry_2",value="basketball",role="radio")
+    | 농구
+    input.radio_button(type="radio",name="check_entry_2",value="soccor",role="radio")
+    | 축구
+    input.radio_button(type="radio",name="check_entry_2",value="poketball" role="radio")
+    | 포켓볼
+    input.radio_button(type="radio",name="check_entry_2",value="running",role="radio")
+    | 달리기
+
+.survey_entry(role="radiogroup")
+  | 3. 당신이 좋아하는 연예인은 누구입니까
+  br
+  span.radio_entry
+    input.radio_button(type="radio",name="check_entry_3",value="girls_generation",role="radio")
+    | 소녀시대
+    input.radio_button(type="radio",name="check_entry_3",value="AOA",role="radio")
+    | AOA
+    input.radio_button(type="radio",name="check_entry_3",value="girls_day",role="radio")
+    | 걸스데이
+    input.radio_button(type="radio",name="check_entry_3",value="EXO" role="radio")
+    | EXO
+    input.radio_button(type="radio",name="check_entry_3",value="infinite",role="radio")
+    | Infinite
+
+
+.submit_navigate
+  table#submit_button_table
+    tbody
+      tr
+        td#submit_button.submit_box
+          input#submit_btn.submit_btn_action(type="submit", name="submit", value="제출")
